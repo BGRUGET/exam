@@ -14,7 +14,8 @@ class NavController extends Controller
      */
     public function index()
     {
-      return view('items',['instruments'=>Instrument::getInstruments()]);
+      $instruments = Instrument::all();
+      return view('items',['instruments'=>$instruments]);
     }
 
     /**
