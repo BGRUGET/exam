@@ -22,7 +22,16 @@ class Instrument extends Model
   public static function deleteInstrument($request)
   {
     $instrument = Instrument::findOrFail($request->id);
-    $instrument->delete();
+    if($instrument->quantity == 1)
+      {
+      $instrument->delete();
+      }
+    else
+    {
+    $instrument->quantity = ($instrument->quantity-1);
+    }
+    $instrument->save();
+
   }
   public static function findInstrument($request)
   {

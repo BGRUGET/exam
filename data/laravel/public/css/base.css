@@ -1,0 +1,38 @@
+.main
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+table td {
+    color: #669;
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+    font-family: Elena;
+    text-align: left;
+    color: #000;
+    font-family: Georgia,serif;
+}
+.ALERTE-STOCK
+{
+  color:red;
+ font-size: 56px;
+  animation: colorblink 2s infinite;
+}
+@keyframes colorblink {
+0% { }
+50% { color:green; }
+
+}
+.ALERTE2-STOCK
+{
+  color:red;
+ font-size: 26px;
+  animation: colorblink 2s infinite;
+}
+@keyframes colorblink {
+0% { }
+50% { color:green; }
+
+}

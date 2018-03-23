@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>MUSIC STORE</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -19,12 +19,13 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/base.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">caca</a>
+                <a class="navbar-brand" href="{{ url('/') }}">SWEET HOME ALABAMA</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -66,7 +67,9 @@
         </nav>
 
         <main class="py-4">
-            @yield('content')
+        </div class = "tableau">
+              @yield('content')
+          </div>
         </main>
     </div>
 </body>
