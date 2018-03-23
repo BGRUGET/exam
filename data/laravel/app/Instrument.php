@@ -29,8 +29,9 @@ class Instrument extends Model
     else
     {
     $instrument->quantity = ($instrument->quantity-1);
-    }
     $instrument->save();
+    }
+
 
   }
   public static function findInstrument($request)
