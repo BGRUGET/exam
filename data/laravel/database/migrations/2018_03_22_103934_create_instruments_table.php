@@ -18,8 +18,7 @@ class CreateInstrumentsTable extends Migration
             $table->string('family'); // à corde , à vent...
             $table->string('type'); // guitare , piano ...
             $table->string('brand');
-            $table->string('name'); 
-            $table->date('years');
+            $table->string('name');
             $table->integer('quantity');
             $table->timestamps();
         });

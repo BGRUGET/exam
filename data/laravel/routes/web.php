@@ -18,4 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/items','NavController@index');
+Route::get('/items','NavController@show');
+Route::get('/insertInstrument', 'NavController@insertInstrument');
+
+Route::post('/insertInstrumentAction', 'ActionController@insertInstrumentAction');
