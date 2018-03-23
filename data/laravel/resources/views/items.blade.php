@@ -2,7 +2,7 @@
 
 @section('content')
     <h4>Instrument</h4>
-    @auth 
+    @auth
     <table>
         <tr>
             <th>Family</th>
@@ -33,6 +33,8 @@
                         {{ Form::close() }}
                     </td>
                 </tr>
+
+
 
             @endforeach
       </table>
