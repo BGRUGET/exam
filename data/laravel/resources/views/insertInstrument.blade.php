@@ -13,5 +13,4 @@
         {{ Form::label('quantity','stock') }}
         {{ Form::number('quantity') }}
         {{ Form::submit('Ajouter') }}
-
 @endsection

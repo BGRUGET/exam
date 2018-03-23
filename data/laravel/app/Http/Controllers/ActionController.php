@@ -12,4 +12,16 @@ class ActionController extends Controller
     Instrument::createInstrument($request);
     return redirect('/items');
     }
+
+    public function deleteInstrumentAction(request $request)
+    {
+      Instrument::deleteInstrument($request);
+      return redirect('/items');
+    }
+
+    public function updateInstrumentAction(request $request)
+    {
+      Instrument::updateInstrument($request);
+      return redirect('/items');
+    }
 }

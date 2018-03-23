@@ -20,7 +20,7 @@
                     <td>{{ $instrument->name }}</td>
                     <td>{{ $instrument->quantity }}</td>
                     <td>
-                        {{ Form::open(['url' => '/deleteInstrument']) }}
+                        {{ Form::open(['url' => '/deleteInstrumentAction']) }}
                             {{ Form::hidden('id', $instrument->id) }}
                             {{ Form::submit('X') }}
                         {{ Form::close() }}

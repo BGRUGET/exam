@@ -21,4 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/items','NavController@show');
 Route::get('/insertInstrument', 'NavController@insertInstrument');
 
+Route::post('/updateInstrument', 'NavController@updateInstrument');
 Route::post('/insertInstrumentAction', 'ActionController@insertInstrumentAction');
+Route::post('/deleteInstrumentAction', 'ActionController@deleteInstrumentAction');
+Route::post('/updateInstrumentAction', 'ActionController@updateInstrumentAction');
